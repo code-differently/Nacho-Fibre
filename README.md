@@ -34,6 +34,11 @@ Output: 8
 
 Explanation: The first 6 numbers (starting at index 0) in the fibonacci sequence are [0, 1, 1, 2, 3, 5, 8] so the 6th number is 8.
 
+
+
+
+
+
 ---
 
 ## Problem 2: The Kaleb Sequence

@@ -1,5 +1,14 @@
 
 const NachoFibre = require("./NachoFibre.js")
+// create a function that will return a position in a array
+// for ex [0, 1, 1, 2, 3, 5, 8] input 6(position) output 8(int)
+// in doing so you would use indexOf() method
+// array indexOf(5, [0, 1, 1, 2, 3, 5, 8]);
+// expected result 5;
+
+let fibonacci = [0, 1, 1 , 2, 3, 5, 8];
+
+console.log(fibonacci.indexOf(5));
 
 test("fibonacci test01", () => {
 
@@ -10,6 +19,7 @@ test("fibonacci test01", () => {
 
     expect(actual).toEqual(expected);
 });
+
 
 test("fibonacci test02", () => {
 
