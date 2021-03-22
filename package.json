@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/code-differently/Nacho-Fibre/issues"
   },
-  "homepage": "https://github.com/code-differently/Nacho-Fibre#readme"
+  "homepage": "https://github.com/code-differently/Nacho-Fibre#readme",
+  "dependencies": {
+    "g": "^2.0.1",
+    "save": "^2.4.0"
+  }
 }
