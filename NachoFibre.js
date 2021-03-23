@@ -1,19 +1,19 @@
 console.log('and again...')
 class NachoFibre{
-    constructor(fibo, kaleb)    {   
+    constructor(fibo, kale)    {   
         this.fibo = fibo;
-        this.kaleb = kaleb;
+        this.kale = kale;
     }
 
     // set prev to 0 & sum to 1
     // add the last two numbers until you get to n
     // return final sum
 
-    fibonacci(fibo){
-        let prev=0;
-        let curr=1;
-        let result=0;
-        for (let i=1; i<fibo; ++i)    {
+    fibonacci(n){
+        let prev = 0;
+        let curr = 1;
+        let result = 0;
+        for (let i=1; i<n; ++i)    {
             result = curr + prev;
             prev = curr;
             curr = result;
@@ -26,12 +26,12 @@ class NachoFibre{
     // double the prev term minus the curr term, n times
     // return final result
 
-    kaleb(kaleb){
-        let prev=2;
-        let curr=-1;
-        let result=0;
-        for (let i=1; i<kaleb; ++i)    {
-            result = (2*prev) - curr;
+    kaleb(n){
+        let prev = 2;
+        let curr = -1;
+        let result = 0;
+        for (let i=1; i<n; ++i)    {
+            result = 2*prev - curr;
             prev = curr;
             curr = result;
         } 
@@ -41,6 +41,9 @@ class NachoFibre{
 
 }
 
-//let assess = new NachoFibre(6,6); 
+// let assess = new NachoFibre(6,6); 
+// console.log(assess.fibonacci(6));
+// console.log(assess.kaleb(6));
+// console.log(assess);
 
 module.exports = NachoFibre;
