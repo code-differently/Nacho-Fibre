@@ -1,10 +1,9 @@
-
 # Nacho Fibre
 
 ## Setup
 
-* Fork the repo
-* Clone the repo
+- Fork the repo
+- Clone the repo
 
 ## Description
 
@@ -14,15 +13,15 @@ You have two problems below. You should write psuedocode and code for each solut
 
 The Fibonacci sequence appears in nature all around us, in the arrangement of seeds in a sunflower and the spiral of a nautilus for example.
 
-The Fibonacci sequence begins with *fibonacci(0) = 0* and *fibonacci(1) = 1* as its first and second terms. After these first two elements, each subsequent element is equal to the sum of the previous two elements.
+The Fibonacci sequence begins with _fibonacci(0) = 0_ and _fibonacci(1) = 1_ as its first and second terms. After these first two elements, each subsequent element is equal to the sum of the previous two elements.
 
 Programmatically:
 
-* *fibonacci(0) = 0*
-* *fibonacci(1) = 1*
-* *fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)*
+- _fibonacci(0) = 0_
+- _fibonacci(1) = 1_
+- _fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)_
 
-Given *n*, return the *nth* number in the sequence.
+Given _n_, return the _nth_ number in the sequence.
 
 ---
 
@@ -40,15 +39,15 @@ Explanation: The first 6 numbers (starting at index 0) in the fibonacci sequence
 
 The Kaleb sequence appears nowhere in nature and exists purely in this question.
 
-The Kaleb sequence begins with *kaleb(0) = 2* and *kaleb(1) = -1* as its first and second terms. After these first two elements, each subsequent element is equal to twice the previous previous term minus the previous term.
+The Kaleb sequence begins with _kaleb(0) = 2_ and _kaleb(1) = -1_ as its first and second terms. After these first two elements, each subsequent element is equal to twice the previous previous term minus the previous term.
 
 Programmatically:
 
-* *kaleb(0) = 2*
-* *kaleb(1) = -1*
-* *kaleb(n) = 2\*kaleb(n-2) - kaleb(n-1)*
+- _kaleb(0) = 2_
+- _kaleb(1) = -1_
+- _kaleb(n) = 2\*kaleb(n-2) - kaleb(n-1)_
 
-Given *n*, return the *nth* number in the sequence.
+Given _n_, return the _nth_ number in the sequence.
 
 ---
 
@@ -66,5 +65,5 @@ Explanation: The first 6 numbers (starting at index 0) in the kaleb sequence are
 
 ## Submission
 
-* Push your code
-* Create a Pull Request
+- Push your code
+- Create a Pull Request
