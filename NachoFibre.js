@@ -2,11 +2,8 @@
 class NachoFibre{
 
     fibonacci(n){
-        if(n==1)
-            return 0;
-        if (n == 2)
-            return 1;
-        return this.fibonacci(n - 1) + fibonacci(n - 2);
+        const fibb = (n) => (n <= 1 ? 1 : fibb(n - 1) + fibb(n - 2));
+        return fibb(n-1);
     }
 
     kaleb(n){
