@@ -35,7 +35,7 @@ class NachoFibre{
 
 }
 
-//module.exports = NachoFibre;
+module.exports = NachoFibre;
 
 //Pseudo Code
 
