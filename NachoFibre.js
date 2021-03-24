@@ -4,7 +4,7 @@ class NachoFibre {
     fibonacci(n) {
         if (n <= 1 || isNaN(n)) return 0;
 
-        // Start at index 1 in fibonacci sequence.
+        // Start at 2nd value in fibonacci sequence.
         let sum = 0, prevSum = 1, prevPrevSum = 0;
         while (n > 1) {
             sum = prevSum + prevPrevSum;
@@ -20,14 +20,14 @@ class NachoFibre {
         if (n <= 0 || isNaN(n)) return 0;
         else if (n === 1) return -1;
 
-        // Start at index 2 in Kaleb sequence.
-        let sum = 0, prevSum = -1, prevPrevSum = 2;
+        // Start at 3rd value in Kaleb sequence.
+        let num = 0, prevNum = -1, prevPrevNum = 2;
         for (let i = 2; i <= n; i++) {
-            sum = prevPrevSum * 2 - prevSum;
-            prevPrevSum = prevSum;
-            prevSum = sum;
+            num = prevPrevNum * 2 - prevNum;
+            prevPrevNum = prevNum;
+            prevNum = num;
         }
-        return sum;
+        return num;
     }
 }
 
