@@ -21,13 +21,20 @@ class NachoFibre {
         else if (n === 1) return -1;
 
         // Start at 3rd value in Kaleb sequence.
-        let num = 0, prevNum = -1, prevPrevNum = 2;
-        for (let i = 2; i <= n; i++) {
-            num = prevPrevNum * 2 - prevNum;
-            prevPrevNum = prevNum;
-            prevNum = num;
+        // let num = 0, prevNum = -1, prevPrevNum = 2;
+        // for (let i = 2; i <= n; i++) {
+        //     num = prevPrevNum * 2 - prevNum;
+        //     prevPrevNum = prevNum;
+        //     prevNum = num;
+        // }
+        //return num;
+
+        const kalebAtTheClub = (index, prevNum, prevPrevNum) => {
+            if (index === n + 1) return prevNum;
+            const num = (prevPrevNum * 2) - prevNum;
+            return kalebAtTheClub(++index, num, prevNum);
         }
-        return num;
+        return kalebAtTheClub(2, -1, 2);
     }
 }
 
