@@ -18,11 +18,43 @@ for (let s = 2; s < n + 1; s++){
 return arr[n]
     }
 
+
     kaleb(n){
-        return -1;
+    let kalebN2 = 2;
+    let kalebN1 = -1;
+    let kalebN;
+
+    for(let i = 2; i <= n; i++){
+        kalebN = 2*kalebN2 - kalebN1;
+        kalebN2 = kalebN1;
+        kalebN1 = kalebN;
+    }
+        return kalebN;
     }
 
-}
 
-module.exports = NachoFibre;
 
+// module.exports = NachoFibre;
+
+
+
+//fibonacci(0) = 0
+// if(n==0){
+//     return 0;
+// }
+// //fibonacii(1) = 1
+// if(n==1){
+//     return 1;
+// }
+
+// //fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)
+// let fibN2 = 0;
+// let fibN1 = 1;
+// let fibN;
+
+// fibN = fibN1 + fibN2;
+// fibN2 = fibN1;
+// fibN1 = fibN;
+
+//n: 0 1 2 3
+//f: 0 1 1
