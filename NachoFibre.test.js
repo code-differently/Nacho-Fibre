@@ -2,7 +2,8 @@
 const NachoFibre = require("./NachoFibre.js")
 
 test("fibonacci test01", () => {
-
+    // test set up
+    // expected  [0, 1, 1, 2, 3, 5, 8]
     let nachoFibre = new NachoFibre();
     let expected = 5;
 
@@ -10,6 +11,29 @@ test("fibonacci test01", () => {
 
     expect(actual).toEqual(expected);
 });
+
+test("fibonacci test01", () => {
+    // test set up
+    // expected  [0, 1, 1, 2, 3, 5, 8]
+    let nachoFibre = new NachoFibre();
+    let expected = 0;
+
+    let actual = nachoFibre.fibonacci(0);
+
+    expect(actual).toEqual(expected);
+});
+
+test("fibonacci test01", () => {
+    // test set up
+    // expected  [0, 1, 1, 2, 3, 5, 8]
+    let nachoFibre = new NachoFibre();
+    let expected = 3;
+
+    let actual = nachoFibre.fibonacci(4);
+
+    expect(actual).toEqual(expected);
+});
+
 
 test("fibonacci test02", () => {
 
